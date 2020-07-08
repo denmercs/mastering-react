@@ -18,3 +18,5 @@ const shopReducer = (state = INITIAL_STATE, action) => {
 };
 
 export default shopReducer;
+
+// updated collections from firebase
