@@ -93,3 +93,8 @@ const mapDispatchToProps = (dispatch) => ({
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);
+
+/**
+ *
+ * Still working on redux saga
+ */
