@@ -96,5 +96,5 @@ export default connect(mapStateToProps, mapDispatchToProps)(App);
 
 /**
  *
- * Still working on redux saga
+ * Still working on redux saga & understanding redux saga features
  */
