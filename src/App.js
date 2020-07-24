@@ -13,6 +13,7 @@ import CheckoutPage from "./pages/checkout/checkout.component";
 import Header from "./components/header/header.component";
 
 import { selectCurrentUser } from "./redux/user/user.selectors";
+import { checkUserSession } from "./redux/user/user.actions";
 
 // import { auth, createUserProfileDocument } from "./firebase/firebase.utils";
 // import {
@@ -49,6 +50,9 @@ class App extends React.Component {
     //   },
     //   (error) => console.log(error)
     // );
+
+    const { checkUserSession } = this.props;
+    checkUserSession();
   }
 
   componentWillUnmount() {
@@ -89,7 +93,11 @@ const mapStateToProps = createStructuredSelector({
 //   setCurrentUser: (user) => dispatch(setCurrentUser(user)),
 // });
 
-export default connect(mapStateToProps)(App);
+const mapDispatchToProps = (dispatch) => ({
+  checkUserSession: () => dispatch(checkUserSession()),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);
 
 /**
  *
