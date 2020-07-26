@@ -101,6 +101,5 @@ export default connect(mapStateToProps, mapDispatchToProps)(App);
 
 /**
  *
- * Still working on redux saga & understanding redux saga features
- * working on understanding redux saga
+ * learning react hooks
  */
