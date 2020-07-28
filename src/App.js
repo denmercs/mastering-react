@@ -101,5 +101,5 @@ export default connect(mapStateToProps, mapDispatchToProps)(App);
 
 /**
  *
- * learning react hooks
+ * learning react hooks and implementing it
  */
