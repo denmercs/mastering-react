@@ -52,6 +52,5 @@ export default connect(mapStateToProps, mapDispatchToProps)(App);
 
 /**
  *
- * learning react hooks and implementing it
- * done learning react hooks.. checking the backend
+ * learning GraphQL and apollo
  */
